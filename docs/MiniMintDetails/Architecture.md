@@ -46,8 +46,8 @@ Each module defines an input, output and consensus item type. Modules also keep 
 
 Clients communicate with federation members via a REST API. They are expected to communicate with as many members as necessary for the required assurances since some might be malicious.
 
-Communication is asynchronous. First clients submit a transaction. After that they can query the transaction’s status. If the transaction is found to be faulty the status will be error and the transaction will not be submitted to the consensus.
+Communication is asynchronous. First, clients submit a transaction. After that, they can query the transaction’s status. If the transaction is found to be faulty, the status will be **error** and the transaction will not be submitted to the consensus.
 
-Once a transaction was included in a consensus round its state changes from **proposed** to **accepted** or **error** in case there was a previously undetected problem (e.g. quick double spend).
+Once a transaction was included in a consensus round, its state changes from **proposed** to **accepted** or **error** in case there was a previously undetected problem (e.g. quick double spend).
 
-Note that the accepted state is not final. Depending on the module outputs may need further action, e.g. generating blind signatures or actually submitting a withdrawal transaction. These will show up in the status as they become available.
+Note that the accepted state is not final. Depending on the module, outputs may need further action, e.g. generating blind signatures or actually submitting a withdrawal transaction. These will show up in the status as they become available.
