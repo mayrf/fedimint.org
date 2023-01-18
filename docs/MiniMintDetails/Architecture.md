@@ -8,7 +8,7 @@ Fedimint is a highly experimental Rust implementation of a federated chaumian mi
 
 In the following we will try to illuminate the high level architecture. Since this is probably not the only way to build such a federated mint we will only talk about Fedimint in particular here. Other projects like SCRIT made other design decisions that are not reflected. Maybe a more comprehensive comparison can be written at a later date.
 
-Fedimint started out as a federated chaumian e-cash prototype. By now it is a more general framework for federated financial applications. At its core is lies the ability to agree on and process transactions. The possible input and output types of these transactions are defined by modules.
+Fedimint started out as a federated chaumian e-cash prototype. By now it is a more general framework for federated financial applications. At its core lies the ability to agree on and process transactions. The possible input and output types of these transactions are defined by modules.
 
 To implement the federated e-cash functionality there currently exist two modules:
 
